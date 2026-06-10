@@ -1,1 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>AgroForte - Agro forte, futuro sustentável</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <!-- Botão de Acessibilidade Fixo -->
+    <div class="botao-acessibilidade" id="botaoAcessibilidade">
+        <button id="btnAcessibilidade" aria-label="Opções de acessibilidade">♿ Acessibilidade</button>
+        <div class="opcoes-acessibilidade" id="opcoesAcessibilidade" style="display: none;">
+            <button id="aumentarFonte">A+ Aumentar fonte</button>
+            <button id="diminuirFonte">A- Diminuir fonte</button>
+            <button id="altoContraste">🌓 Alto contraste</button>
+        </div>
+    </div>
+
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo">
+            <h1>🌾 AgroForte</h1>
+            <p>Agro forte, futuro sustentável</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#problema">Problema</a></li>
+                <li><a href="#solucoes">Soluções</a></li>
+                <li><a href="#jogo">Jogo</a></li>
+                <li><a href="#dicas">Dicas</a></li>
+                <li><a href="#conclusao">Conclusão</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+        <!-- Seção Início -->
+        <section id="inicio" class="secao">
+            <div class="conteudo-inicio">
+                <h2>Bem-vindo ao AgroForte</h2>
+                <p>Você sabia que é possível produzir alimentos e ao mesmo tempo cuidar do meio ambiente?</p>
+                <p>No <strong>AgroForte</strong>, você vai aprender como o desmatamento afeta o clima, a água, os animais e a nossa vida. E o melhor: vai descobrir como pequenas atitudes podem fazer a diferença!</p>
+                <div class="destaque">
+                    <p>🌱 <strong>Desafio interativo:</strong> Jogue e veja como suas escolhas ajudam ou prejudicam o planeta!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Sobre o tema -->
+        <section id="sobre" class="secao">
+            <h2>🌍 O que é sustentabilidade na agricultura?</h2>
+            <article>
+                <p>Sustentabilidade na agricultura significa produzir alimentos de forma inteligente, sem destruir a natureza. É possível ter um <strong>agro forte</strong> e ao mesmo tempo preservar florestas, rios e o solo.</p>
+                <p>A agricultura sustentável equilibra a produção de comida com o cuidado com o meio ambiente. Assim, garantimos que as futuras gerações também possam plantar, colher e viver bem.</p>
+                <p><strong>Agro forte, futuro sustentável</strong> é isso: produzir sem destruir, crescer sem poluir.</p>
+            </article>
+        </section>
+
+        <!-- Seção Problema ambiental -->
+        <section id="problema" class="secao">
+            <h2>⚠️ O problema: desmatamento</h2>
+            <article>
+                <p>O desmatamento é a retirada das florestas e matas. No Brasil, isso acontece muito na Amazônia, no Cerrado e em outros biomas importantes.</p>
+                <p><strong>Por que o desmatamento é grave?</strong></p>
+                <ul>
+                    <li>🌡️ <strong>Afeta o clima:</strong> Sem árvores, fica mais quente e chove menos.</li>
+                    <li>💧 <strong>Afeta a água:</strong> As florestas protegem os rios e nascentes.</li>
+                    <li>🦜 <strong>Afeta os animais:</strong> Muitos perdem seu habitat e podem desaparecer.</li>
+                    <li>👨‍🌾 <strong>Afeta a agricultura:</strong> Sem florestas, o solo fica pobre e as plantações sofrem.</li>
+                </ul>
+                <p>O desmatamento desequilibra a natureza e prejudica a vida de todos — pessoas, plantas e animais.</p>
+            </article>
+        </section>
+
+        <!-- Seção Soluções sustentáveis -->
+        <section id="solucoes" class="secao">
+            <h2>💡 Soluções para reduzir o desmatamento</h2>
+            <article>
+                <p>Existem muitas formas de ajudar a combater o desmatamento. Veja algumas:</p>
+                <div class="solucoes-grid">
+                    <div class="card-solucao">
+                        <h3>🌳 Reflorestamento</h3>
+                        <p>Plantar árvores nativas onde a mata foi destruída.</p>
+                    </div>
+                    <div class="card-solucao">
+                        <h3>📜 Agricultura em áreas já abertas</h3>
+                        <p>Usar terras que já foram desmatadas, sem abrir novas áreas.</p>
+                    </div>
+                    <div class="card-solucao">
+                        <h3>🔍 Fiscalização e leis</h3>
+                        <p>Denunciar desmatamento ilegal e cobrar o cumprimento da lei.</p>
+                    </div>
+                    <div class="card-solucao">
+                        <h3>🛍️ Consumo consciente</h3>
+                        <p>Evitar produtos que vêm de áreas desmatadas.</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- Seção Jogo educativo -->
+        <section id="jogo" class="secao">
+            <h2>🎮 Jogo educativo: Escolhas do dia a dia</h2>
+            <p>Você vai enfrentar 3 situações. Escolha a atitude que mais ajuda o meio ambiente!</p>
+            
+            <div id="area-jogo">
+                <!-- O jogo será inserido aqui pelo JavaScript -->
+            </div>
+            
+            <div id="resultado-jogo" style="display: none;">
+                <h3>📊 Seu resultado</h3>
+                <p id="mensagem-final"></p>
+                <button id="reiniciarJogo">🔁 Jogar novamente</button>
+            </div>
+        </section>
+
+        <!-- Seção Dicas sustentáveis -->
+        <section id="dicas" class="secao">
+            <h2>🌿 Dicas sustentáveis para o dia a dia</h2>
+            <div class="dicas-grid">
+                <div class="card-dica">
+                    <p>✅ Prefira produtos de madeira com certificação de reflorestamento.</p>
+                </div>
+                <div class="card-dica">
+                    <p>✅ Economize papel: use os dois lados e recicle.</p>
+                </div>
+                <div class="card-dica">
+                    <p>✅ Nunca compre móveis ou objetos feitos de madeira de áreas ilegais.</p>
+                </div>
+                <div class="card-dica">
+                    <p>✅ Plante uma árvore! Mesmo que seja pequena, ela ajuda o planeta.</p>
+                </div>
+                <div class="card-dica">
+                    <p>✅ Converse com amigos e familiares sobre a importância das florestas.</p>
+                </div>
+                <div class="card-dica">
+                    <p>✅ Apoie projetos de reflorestamento e agricultura sustentável.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Conclusão -->
+        <section id="conclusao" class="secao">
+            <h2>🌟 Conclusão</h2>
+            <article>
+                <p>O desmatamento é um problema sério, mas <strong>todos podemos ajudar</strong>! Com pequenas atitudes no dia a dia, fazemos a diferença.</p>
+                <p>O <strong>AgroForte</strong> acredita que é possível ter uma agricultura forte e, ao mesmo tempo, um futuro sustentável. Cuidar da natureza é cuidar da nossa própria vida.</p>
+                <p><strong>Lembre-se:</strong> cada escolha conta. Seja parte da solução!</p>
+                <div class="frase-final">
+                    🌎 Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente 🌱
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>Projeto desenvolvido para o Concurso Agrinho 2026</p>
+        <p>AgroForte - Conscientização ambiental</p>
+        <p>🌿 Preservar é preciso. Agir é urgente!</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
